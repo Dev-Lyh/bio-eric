@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&family=Poppins&display=swap");
 :root {
   --Background-Color: #10102B;
-  --Check-BG: #36FF54;
+  --Check-BG: linear-gradient(to right, #36FF54, #3068B1);
   --Check-Color: #191944;
   --Color-Text: #f6f6f6;
   --Text-Hover: #191944;
@@ -10,20 +10,20 @@
   --Border-Color-Links: #36FF54;
   --Border-Hover: #0b0b20;
   --Special-BG: #36FF54;
-  --Special-Hover-BG: #191944;
+  --Special-Hover-BG: #252599;
 }
 
 :root .light {
   --Background-Color: #ccc;
-  --Check-BG: #3068B1;
-  --Check-Color: #c5c5c5;
+  --Check-BG: linear-gradient(to right, #07d325, #0011cf);
+  --Check-Color: linear-gradient(to left, rgb(170, 170, 170), #ffffff);
   --Color-Text: #191944;
-  --Text-Hover: #f6f6f6;
-  --Box-Links-BG: rgba(112, 186, 255, 0);
+  --Text-Hover: #0059ff;
+  --Box-Links-BG: rgba(0, 132, 255, 0);
   --Shadow-Bx-Links: #bebebe;
   --Border-Color-Links: #3068B1;
   --Border-Hover: #c5c5c5;
-  --Special-BG: #3068B1;
+  --Special-BG: #54749e;
   --Special-Hover-BG: #9ac0f3;
 }
 
@@ -100,8 +100,8 @@ body > .toggle-part > #toggle-btn {
           appearance: none;
   width: 6.5rem;
   height: 2.4rem;
-  border-radius: 0.4rem;
-  background-color: var(--Check-BG);
+  border-radius: 2rem;
+  background: var(--Check-BG);
   position: relative;
   outline: 0;
   cursor: pointer;
@@ -111,7 +111,7 @@ body > .toggle-part > #toggle-btn::before {
   content: "";
   height: 2.4rem;
   width: 3rem;
-  border-radius: 0.4rem;
+  border-radius: 2rem;
   -webkit-transform: translateX(0) scale(0.8);
           transform: translateX(0) scale(0.8);
   background: var(--Check-Color);
@@ -163,7 +163,7 @@ main {
 
 main > figure > img {
   width: 12rem;
-  border-radius: 6rem;
+  border-radius: 4rem;
   border: 0.3rem solid var(--Border-Color-Links);
 }
 
@@ -193,7 +193,6 @@ main > p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 2.5rem;
   background-color: var(--Box-Links-BG);
   padding: 4rem;
   background: var(--Box-Links-BG);
@@ -201,7 +200,7 @@ main > p {
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  border-radius: 10px;
+  border-radius: 4rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -241,7 +240,7 @@ main > p {
           justify-content: center;
   width: 20rem;
   height: 10rem;
-  border-radius: 1rem;
+  border-radius: 4rem;
   margin: 1rem;
   padding: 1rem;
   background: transparent;
@@ -256,7 +255,7 @@ main > p {
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.27);
   backdrop-filter: blur(0.6rem);
   -webkit-backdrop-filter: blur(0.6rem);
-  border-radius: 1rem;
+  border-radius: 2rem;
   border: 0.2rem solid var(--Border-Color-Links);
 }
 
@@ -293,12 +292,13 @@ a > .iconify {
   background-color: var(--Special-BG);
   margin-top: 4rem;
   text-align: center;
-  border-radius: 1rem;
+  border-radius: 4rem;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .contact:hover {
+  border-radius: 1rem;
   background-color: var(--Special-Hover-BG);
 }
 
